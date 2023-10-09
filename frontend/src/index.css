@@ -33,25 +33,25 @@ code {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --color-gray-100: #f4f3f1;
-  --color-gray-200: #dddbd8;
-  --color-gray-300: #ccc9c6;
-  --color-gray-400: #aeaba7;
+  --color-gray-100: #c1c3c5;
+  --color-gray-200: #d0e0ed;
+  --color-gray-300: #93a2ae;
+  --color-gray-400: #95afc3;
   --color-gray-500: #8a8784;
   --color-gray-600: #656360;
   --color-gray-700: #4b4a47;
   --color-gray-800: #31302e;
   --color-gray-900: #1f1d1b;
 
-  --color-primary-100: #fcf3e1;
-  --color-primary-200: #fceccd;
-  --color-primary-300: #fae1af;
-  --color-primary-400: #fbd997;
-  --color-primary-500: #ffd37c;
-  --color-primary-600: #f9c762;
-  --color-primary-700: #fbc14d;
-  --color-primary-800: #fab833;
-  --color-primary-900: #f6ad1b;
+  --color-primary-100: #b3e5fc;
+  --color-primary-200: #8fc9f8;
+  --color-primary-300: #63b5f7;
+  --color-primary-400: #42a4f5;
+  --color-primary-500: #2296f3;
+  --color-primary-600: #039be5;
+  --color-primary-700: #1774d0;
+  --color-primary-800: #1665c0;
+  --color-primary-900: #0d47a0;
 }
 
 
@@ -63,4 +63,8 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }

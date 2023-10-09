@@ -1,11 +1,11 @@
 import React from 'react'
+import RecipeNavigation from './RecipeNavigation'
 import { Outlet } from 'react-router-dom'
-import MainNavigation from './MainNavigation'
 
-const Layout = () => {
+const RecipeLayout = () => {
   return (
     <>
-    <MainNavigation/>
+    <RecipeNavigation/>
     <main>
         <Outlet/>
     </main>
@@ -13,4 +13,4 @@ const Layout = () => {
   )
 }
 
-export default Layout
+export default RecipeLayout

@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { getAll, get, add, replace, remove } = require('../data/event');
+const { getAll, get, add, replace, remove } = require('../data/recipe');
 const {
   isValidText,
   isValidDate,
@@ -11,10 +11,10 @@ const router = express.Router();
 
 router.get('/', async (req, res, next) => {
   try {
-    const events = await getAll();
+    const recipes = await getAll();
 
   setTimeout(()=>{
-    res.json({ events: events });
+    res.json({ recipes: recipes });
   },2000)
   
   } catch (error) {
@@ -24,8 +24,8 @@ router.get('/', async (req, res, next) => {
 
 router.get('/:id', async (req, res, next) => {
   try {
-    const event = await get(req.params.id);
-    res.json({ event: event });
+    const recipe = await get(req.params.id);
+    res.json({ recipe: recipe });
   } catch (error) {
     next(error);
   }
@@ -54,7 +54,7 @@ router.post('/', async (req, res, next) => {
 
   if (Object.keys(errors).length > 0) {
     return res.status(422).json({
-      message: 'Adding the event failed due to validation errors.',
+      message: 'Adding the recipe failed due to validation errors.',
       errors,
     });
   }
@@ -62,7 +62,7 @@ router.post('/', async (req, res, next) => {
   try {
     await add(data);
     setTimeout(() =>{
-      res.status(201).json({ message: 'Event saved.', event: data });
+      res.status(201).json({ message: 'Recipe saved.', recipe: data });
 
     }, 2000)
   } catch (error) {
@@ -93,14 +93,14 @@ router.patch('/:id', async (req, res, next) => {
 
   if (Object.keys(errors).length > 0) {
     return res.status(422).json({
-      message: 'Updating the event failed due to validation errors.',
+      message: 'Updating the recipe failed due to validation errors.',
       errors,
     });
   }
 
   try {
     await replace(req.params.id, data);
-    res.json({ message: 'Event updated.', event: data });
+    res.json({ message: 'Recipe updated.', recipe: data });
   } catch (error) {
     next(error);
   }
@@ -109,7 +109,7 @@ router.patch('/:id', async (req, res, next) => {
 router.delete('/:id', async (req, res, next) => {
   try {
     await remove(req.params.id);
-    res.json({ message: 'Event deleted.' });
+    res.json({ message: 'Recipe deleted.' });
   } catch (error) {
     next(error);
   }

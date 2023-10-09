@@ -1,0 +1,11 @@
+{"recipes":[{
+    "id": 1,
+    "image": "https://www.acouplecooks.com/wp-content/uploads/2017/09/Coconut-Lentil-Curry-004.jpg",
+    "name": "Coconut Lentil Curry",
+    "description": "This 30-minute coconut lentil curry is one of our most popular lentil recipes to date. It's a fast and easy dinner idea that's healthy and full of flavor."
+  },{
+    "id": 2,
+    "name": "Masoor Dal",
+    "image": "https://www.acouplecooks.com/wp-content/uploads/2019/06/Masoor-Dal-009.jpg",
+    "description": " It's an authentic Indian lentil recipe from Chef Asma Khan, the force behind the all-women staffed London restaurant Darjeeling Express. "
+  }]}

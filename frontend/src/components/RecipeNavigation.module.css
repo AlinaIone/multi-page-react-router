@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.list{
+    display: flex;
+    gap: 2rem;
+}
+
+.list a {
+    color: var(--color-primary-100);
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 700;
+
+border-radius: 10px;
+}
+
+.list a:hover,
+.list a.active {
+    background-color: var(--color-gray-700);
+  /* text-decoration: underline; */
+ 
+}

@@ -11,6 +11,8 @@ const RecipesPage = () => {
 
 export default RecipesPage;
 
+
+// The loader code executes in the browser (user-side) not on the server
 export const recipeLoader = async () => {
   const response = await fetch("http://localhost:8080/recipes");
 

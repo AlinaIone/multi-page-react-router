@@ -15,7 +15,7 @@ router.get('/', async (req, res, next) => {
 
   setTimeout(()=>{
     res.json({ recipes: recipes });
-  },2000)
+  },1500)
   
   } catch (error) {
     next(error);
